@@ -1,7 +1,15 @@
 package sg.airlab;
 
 // Solution #1 to fix the false-sharing problem: storing the variables in
-// different objects.
+// different objects. This deserves more explanation ... Essentially, the
+// program does exactly what it did as illustrated in the program
+// `FalseSharingExample.java` and the oddity here is to create 2 different
+// objects and have each thread work on the different variables and this
+// violates essentially every aspect of what every programmer learnt when it
+// comes to software encapsulation and abstraction. So, what can we do next ?
+// There are a couple of solutions available to Java programmers and the best
+// one is to leverage tooling already available in the JDK (the caveat here is
+// that not everyone knows this) illustrated in `FalseSharingExampleFinal.java`
 public class FalseSharingExample2 {
   public static void main(String[] args) {
 
