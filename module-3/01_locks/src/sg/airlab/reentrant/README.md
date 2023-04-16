@@ -5,6 +5,9 @@ Types of Locks
 ==
 
 There are the following types:
+* [Intrinsic Lock](https://docs.oracle.com/javase/tutorial/essential/concurrency/locksync.html)
+* [Dedicated Lock Object](https://docs.oracle.com/javase/tutorial/essential/concurrency/locksync.html)
+  * **Note** We discussed this in a earlier session using a separate `Object` instead of a instance or class lock!
 * [Reentrant Lock](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html)
 
 Reentrant Lock
